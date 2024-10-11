@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique path and shareable link</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+        <div class="outer-body" id="outer-body">
+            <br>
+          <h1>Resume Genarator</h1>
+          <p class="myp"> <b>By Jawaid Ali </b></p>
+          <br>
+         <p class="myp">Genarate your resume here</p>
+            <form action="">
+            <div class="container">
+       
+        
+                 <div class="colum">
+                <h3>Personal Information</h3>
+
+                <label for="username">Resume URL</label>
+                <input type="text" id="username" >
+                
+                <label for="name">picture</label>
+                <input type="file" id="img" placeholder="insert img">
+
+                <label for="name">Your name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                
+
+                <label for="birth-date">Your Date of Birth</label>
+                <input type="text" id="birth-date" placeholder="Enter your Birth date">
+
+                <label for="CNIC">#CNIC</label>
+                <input type="text" id="CNIC" placeholder="Enter your CNIC number">
+
+                <label for="phone-number">Phone number</label>
+                <input type="text" id="phone" placeholder="Enter your number">
+
+                <label for="email">Email address</label>
+                <input type="text" id="email" placeholder="Enter your email">
+
+                <div id="addtextarea">
+                 <label for="Languages">Languages</label>
+                 <textarea  class="Language" placeholder="Language?"> </textarea>
+                
+                    <div id="addButton">
+                        <button onclick="clickButton()" type="button">Add</button>
+                    </div>
+                </div>
+
+               
+            
+                </div>
+                <div class="colum">
+                
+                    <div class="forS">
+                    <h3>Professional Information</h3>
+                <label for="objective">Objective</label>
+                <textarea class="textarea2" id="objective" placeholder="Your objective"> </textarea>
+                 </div>
+
+                 <div id="edu">
+                <label for="education">Education</label>
+                <textarea class="education" placeholder="Add your education"> </textarea>
+                <div id="eduButton">
+                <button onclick="clickButton2()" type="button">add</button>
+                </div>
+                </div>
+            
+                <div id="exp">
+                <label for="experiance">Experiances</label>
+                <textarea class="experiance" placeholder="Add your experiance"> </textarea>
+                <div id="expButton">
+                <button onclick="clickButton3()" type="button" id="button">add</button>
+                </div>
+                </div>
+
+                <div id="skill">
+                <label for="skills">Skills</label>
+                <textarea class="skills" placeholder="Add your Skills"> </textarea>
+                <div id="skillButton">
+                <button onclick="clickButton4()" id="addButton" type="button">add</button>
+                </div>
+                </div>
+               
+            </div>
+        </form>
+        
+        </div>
+        
+        <button  type="submit" onclick="genarateCv(); editble()" class="submit-button">Genarate</button>
+    </div>
+        
+    <!-- template for cv -->
+        <div id="outer-bodyT">
+       
+            <div class="containerT"> 
+                <div class="headername" id="nameT2"><h1>Jawaid ali</h1> </div>
+                <div class="columT" >
+                    <img id="imgT" class="myimage" src="default.jpg" alt="">
+
+                        <br><br>
+                        <h3>Personl Information</h3>
+                        <br>
+                        <p id="nameT">Jawaid ali</p>
+                        <p id="birthT">10/03/2001</p>
+                        <p id="CNICT">38484-34993483493-3</p>
+                        <br>
+                        <br><br>
+                        <hr>
+                        <div class="contact">
+                            <p ><b>Contact</b></p>
+                            <br>
+                            
+                            <div>
+                                <i  class="fa-solid fa-phone"></i>
+                                <span id="phoneT">+123456789</span>
+                            </div>
+                            
+                            <div>
+                                <i  class="fa-solid fa-envelope"></i>
+                                <span id="emailT">mail@gmail.com</span>
+                            </div>
+                        </div>
+                        <br>
+                            <br><br>
+                            <hr>
+                        <div>
+                            
+                            <div>
+                                <p><b>Languages</b></p>
+                                <br>
+                                <ul id="langT">
+                                    <li>
+                                        urdu
+                                        
+                                    </li>
+                                    <li>english</li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+                
+                <div class="columT2" >
+                    
+                    <h3>Professional Information</h3>
+                    <br><br>
+                    <div >
+                        <div class="mybgstyle" class="font-size">
+                            <i class="fa-solid fa-bullseye"></i>
+                           <span><b>Objective</b></span>
+                        </div>
+                        <br>
+
+                        <div class="Objective" id="objectiveT">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consequuntur tempora, nam voluptate repellat tenetur, dolore nobis dolorem esse nihil laborum adipisci aspernatur hic quam in quod repudiandae rem odio.
+                            Esse sed tenetur aliquam inventore a debitis fuga neque, asperiores quo reprehenderit corporis officiis eum atque totam adipisci dolor nemo facilis modi temporibus laboriosam aperiam delectus quibusdam. Eius, facilis at!
+                            Vitae sapiente ad sequi odit neque hic sint amet, dignissimos cumque nulla natus odio aperiam. 
+                            </p>
+                        </div>
+
+                        
+                    </div>
+                    <br>
+                    <br>
+                    <div>
+                        <div class="mybgstyle" class="font-size">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span><b>Education</b></span>
+                        </div>
+                        <br>
+                        <div>
+                            <ul id="eduT">
+                                <li><b>Mataric:</b> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                <li><b>Intermediate:</b> Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+                                <li><b>graduation:</b>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div>
+                        <div class="mybgstyle" class="font-size">
+                            
+                            <i class="fa-solid fa-brain"></i>
+                            <span><b>Experiances</b></span>
+                        </div>
+                        <br>
+                        <div>
+                            <ul id="expT">
+                                <li><b>infomatec:</b> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                <li><b>cactus</b> Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+
+                    <div>
+                        <div class="mybgstyle" class="font-size">
+                            
+                            <i class="fa-solid fa-laptop"></i>
+                            <span><b>Skills</b></span>
+                        </div>
+                        
+                        <br>
+                        <div>
+                            <ul id="skillsT">
+                                <li>MS Excel</li>
+                                <li>MS Word</li>
+                                <li>MS Power Point</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>HTML</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                   
+
+                </div>
+
+            </div>
+
+            
+           
+        </div>
+
+        <div id="lastBtn">
+            <button type="button" id="editable" onclick="clickedite()">Edit CV</button>
+            
+           
+        </div>
+
+       
+    </div>
+    <div id="download-link-container">
+        <h2>Download Link</h2>
+        <br>
+        <p>here is your link to download</p>
+        <br>
+        <div id="download-link"></div>
+        <br>
+        <button type="button" id="download-pdf" onclick="printCv()">download PDF</button>
+    </div>
+    <script src="index.js"></script>
+    
+    
+</body>
+</html>

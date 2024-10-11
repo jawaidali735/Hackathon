@@ -1,0 +1,479 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:   Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* p {
+    text-align: center;
+} */
+
+.myp{
+    text-align: center;
+}
+
+
+.outer-body{
+    display: block;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 900px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    
+}
+.colum {
+    width: 45%; 
+    padding: 0;
+    
+}
+
+label {
+    display: block;
+    margin: 25px 0 6px 0; 
+    
+    color: rgb(69, 67, 67);
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border-color: grey;
+    background-color: rgb(237, 243, 245, 0.5);
+}
+#img{
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border-color: grey;
+}
+textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border-color: grey;
+    height: 30px;
+    background-color: rgb(237, 243, 245, 0.5);
+}
+
+button {
+    padding: 4px;
+    width: 10%;
+    border-radius: 5px;
+    margin-top: 6px;
+    background-color: #007bff;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+
+.submit-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px; 
+} 
+
+.submit-button:hover{
+    background-color: #0056b3;
+}
+.textarea2{
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border-color: grey;
+    height: 110px;
+}
+
+
+
+/* template css */
+
+#outer-bodyT {
+     
+    
+    width: 800px; 
+    display: flex;
+    margin: 50px auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: none;
+   
+    
+    
+}
+.containerT {
+    width: 800px; 
+    display: flex;
+    margin: 0 auto; 
+    
+     
+}
+
+.headername {
+    background: linear-gradient(137deg, rgba(45, 253, 247, 1) 0%, rgba(34, 170, 199, 1) 39%, rgba(22, 107, 145, 1) 100%);
+    width: 800px;
+    height: 140px;
+    position: absolute;
+    color: #dae3f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+
+.columT {
+    width: 35%; 
+    margin: 20px 0; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    background-color: #dae3f3;
+    border-radius: 7px;
+    padding: 20px; 
+    box-sizing: border-box; 
+    white-space: normal; 
+    word-wrap: break-word; 
+    
+}
+
+.columT p {
+    margin-top: 7px;
+}
+
+#nameT{
+    font-size: 18px;
+}
+#langT{
+    font-size: 13px;
+}
+
+.columT2 p {
+    margin-top: 20px;
+}
+.contact div span {
+    padding-left: 5px;
+    font-size: 13px;
+    
+}
+.contact i {
+    
+    font-size: 13px;
+    
+}
+.contact {
+    margin-bottom: 100px;
+}
+.contact div {
+    margin-bottom: 7px; 
+    text-align: center;
+    margin-top: 10px;
+}
+.contact p {
+    text-align: center;
+}
+
+.columT2 {
+    width: 65%; 
+    margin-top: 150px; 
+    display: flex;
+    flex-direction: column; 
+    padding: 20px;
+    box-sizing: border-box; 
+    white-space: normal; 
+    word-wrap: break-word; 
+    margin-left: 20px;
+}
+
+.columT2 > div {
+    padding-top: 40px;
+}
+
+.columT hr {
+    width: 100%; 
+    border: 1px solid rgb(22, 107, 145); 
+    margin: 10px 0; 
+}
+
+.myimage {
+    width: 200px;
+    height: 200px;
+    border: solid;
+    border-color: rgb(22, 107, 145);
+    border-radius: 50%;
+    position: relative;
+}
+
+button#download-pdf {
+ 
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 5px;
+  
+   width: 140px;
+}
+
+button#printBtn:hover {
+    background-color: #0056b3;
+} 
+
+ button#editable {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+   display: none;
+}
+
+button#editable:hover {
+    background-color: #0056b3; 
+}
+
+
+
+#download-link-container{
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+    text-align: center;
+    display: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    
+    
+}
+@media print {
+    
+    * {
+        -webkit-print-color-adjust: exact !important; 
+        print-color-adjust: exact !important;
+    }
+
+    
+    .headername {
+        background-color: rgba(45, 253, 247, 1) !important;
+        background: linear-gradient(137deg, rgba(45, 253, 247, 1) 0%, rgba(34, 170, 199, 1) 39%, rgba(22, 107, 145, 1) 100%) !important;
+        color: white !important;
+    }
+
+    
+    .columT {
+        background-color: #dae3f3 !important;
+    }
+
+    button {
+        display: block;
+    }
+
+    #outer-bodyT {
+        box-shadow: none;
+    }
+    
+
+    #editable,
+    #download-link-container {
+        display: none !important; 
+    }
+}
+
+
+
+@media (max-width: 768px) {
+   
+    .container {
+        flex-direction: column;
+        width: 100%;  
+    }
+
+    .forS{
+        margin-top: 26px;
+    }
+    
+    .colum {
+        width: 100%;  
+        margin: 10px 0;  
+    }
+ 
+    
+    input{
+        padding: 15px;
+    }
+
+    textarea{
+        height: 50px;
+    }
+    
+    .outer-body h1 {
+        font-size: 30px;
+    }
+
+    .outer-body p {
+        font-size: 20px;
+    }
+
+    button, .submit-button  {
+        width: 20%;  
+        font-size: 15px;  
+        padding: 12px;  
+        margin: 10px auto;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    
+    .containerT {
+        width: 100%;  
+    }
+
+    .columT {
+        width: 35%;  
+        margin: 0 0;  
+        text-align: center;
+        
+        
+    }
+    .columT p {
+        font-size: 8px;
+        margin-top: 3px;
+    }
+    #nameT{
+        font-size: 10px;
+    }
+
+    .columT2 {
+        width: 65%;  
+        margin: 10px 0;
+        margin-top: 60px;  
+        border-radius: 0px;
+    }
+
+    .headername {
+        width: 100%;
+        font-size: 8px;  
+        line-height: 1.5;  
+        padding: 5px;  
+        height: 65px;  
+        border-radius: 0px;
+    }
+
+    
+    .myimage {
+        width: 100px;  
+        height: 100px; 
+        object-fit: cover; 
+    }
+
+    #outer-bodyT {
+        width: 100%;
+        margin: 0px auto; 
+        border-radius: 0px;
+    }
+
+    
+    h1, h2 ,h4 {
+        font-size: 13px;  
+        margin: 5px 0;    
+    }
+
+    h3 {
+        font-size: 11px;  
+        margin: 5px 0;   
+    }
+
+    
+    p {
+        font-size: 8px;  
+        line-height: 1.4;  
+    }
+
+    /* Ensure list items are not too large */
+    #langT li, #eduT li, #expT li, #skillsT li {
+        font-size: 8px;  
+        
+    }
+
+    .mybgstyle i {
+        font-size: 11px;  
+        margin-right: 5px;  
+    }
+
+    .mybgstyle span {
+        font-size: 9px;  
+        line-height: 1.2;  
+    }
+
+    .columT2 > div {
+        padding-top: 5px;
+    }
+ 
+
+    #emailT{
+        font-size: 6px;
+    }
+
+    #phoneT{
+        font-size: 8px;
+        
+    }
+
+    .contact i {
+        font-size: 8px;
+    
+    }
+    .contact div span{
+        padding-top: 0px;
+    }
+
+    .contact {
+        margin-bottom: 0px;
+    }
+
+    #cnct{
+        margin-bottom: 0px;
+    }
+
+   
+    #objectiveT {
+        font-size: 8px;
+    }
+
+    #download-link-container p {
+        font-size: 15px;
+    }
+
+    #download-link-container h2 {
+        font-size: 20px;
+    }
+}

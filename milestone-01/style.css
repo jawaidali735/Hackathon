@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:   Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+#outer-bodyT {
+     
+    
+    width: 800px; 
+    display: flex;
+    margin: 50px auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    
+    
+}
+.containerT {
+    width: 800px; 
+    display: flex;
+    margin: 0 auto; 
+     
+     
+}
+
+.headername {
+    background: linear-gradient(137deg, rgba(45, 253, 247, 1) 0%, rgba(34, 170, 199, 1) 39%, rgba(22, 107, 145, 1) 100%);
+    width: 800px;
+    height: 140px;
+    position: absolute;
+    color: #dae3f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+
+.columT {
+    width: 35%; 
+    margin: 20px 0; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    background-color: #dae3f3;
+    border-radius: 7px;
+    padding: 20px; 
+    box-sizing: border-box; 
+    white-space: normal; 
+    word-wrap: break-word; 
+    
+}
+
+.columT p {
+    margin-top: 7px;
+
+};
+
+
+.contact div span {
+    padding-left: 10px;
+    
+}
+.contact div {
+    margin-bottom: 7px; 
+    align-items: center;
+    
+}
+
+.contact p {
+    text-align: center;
+}
+
+.columT2 {
+    width: 65%; 
+    margin-top: 170px; 
+    display: flex;
+    flex-direction: column; 
+    box-sizing: border-box; 
+    white-space: normal; 
+    word-wrap: break-word; 
+    margin-left: 35px;
+}
+.columT  hr {
+    width: 100%; 
+    border: 1px solid rgb(22, 107, 145); 
+    margin: 10px 0; 
+}
+.columT2  hr {
+    width: 50%; 
+    border: 1px solid rgb(22, 107, 145); 
+    margin: 10px 0; 
+}
+.myimage {
+    width: 200px;
+    height: 200px;
+    border: solid;
+    border-color: rgb(22, 107, 145);
+    border-radius: 50%;
+    position: relative;
+}
+
+.mybgstyle {
+    font-weight: bold;
+}
+#outer-bodyT {
+    width: 800px; 
+    margin: 50px auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+button#toggle-skills {
+    display: block;
+    
+    padding: 10px 20px;
+    background-color: #89a9cb;
+    color: rgb(10, 10, 10);
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 5px;
+   
+}
+
+button#toggle-skills:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    
+    .containerT {
+        width: 100%;  
+    }
+
+    .columT {
+        width: 35%;  
+        margin: 0 0;  
+        text-align: center;  
+        
+        
+    }
+    .columT p {
+        font-size: 8px;
+        margin-top: 3px;
+    }
+    #nameT{
+        font-size: 10px;
+    }
+
+    .columT2 {
+        width: 65%;  
+        margin: 10px 0;
+        margin-top: 70px;  
+        border-radius: 0px;
+        margin-left: 25px;
+    }
+
+    .columT2 p {
+        font-size: 8px;
+    }
+
+    .headername {
+        width: 100%;
+        font-size: 8px;  
+        line-height: 1.5;  
+        padding: 5px;  
+        height: 65px;  
+        border-radius: 0px;
+    }
+
+    
+    .myimage {
+        width: 100px;  
+        height: 100px; 
+        object-fit: cover;
+    }
+
+    #outer-bodyT {
+        width: 100%;
+        margin: 0px auto; 
+        border-radius: 0px;
+    }
+
+    
+    h1, h2 ,h4 {
+        font-size: 13px;  
+        margin: 5px 0;    
+    }
+
+    h3 {
+        font-size: 11px;  
+        margin: 5px 0;    
+    }
+
+    
+    p {
+        font-size: 8px;  
+        line-height: 1.4;  
+    }
+
+    
+    #langT li, #eduT li, #expT li, #skillsT li {
+        font-size: 8px;  
+        
+    }
+
+    .mybgstyle i {
+        font-size: 11px;  
+        margin-right: 5px;  
+    }
+
+    .mybgstyle span {
+        font-size: 9px;  
+        line-height: 1.2; 
+    }
+
+    .columT2 i {
+        font-size: 11px;
+        margin-right: 5px;
+    }
+
+    .columT2 span {
+        font-size: 9px;  
+        line-height: 1.2; 
+    }
+    .columT2 li {
+        font-size: 9px;
+    }
+    .columT2 > div {
+        padding-top: 5px;
+    }
+ 
+
+    #emailT{
+        font-size: 8px;
+    }
+
+    #phoneT{
+        font-size: 8px;
+        
+    }
+
+    .contact i {
+        font-size: 8px;
+    
+    }
+    .contact div span{
+        padding-top: 0px;
+
+    }
+
+    .contact {
+        margin-bottom: 0px;
+    }
+
+    #cnct{
+        margin-bottom: 0px;
+    }
+
+   
+    #objectiveT {
+        font-size: 8px;
+    }
+    button#toggle-skills{
+        width: 40%;  
+        font-size: 9px;  
+        padding: 7px;  
+        
+    }
+}
